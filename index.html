@@ -18,7 +18,6 @@
   }
   .navbar-header {
     margin-top: 0px;
-
   }
   .logo {
     margin-top: 0px;
@@ -42,6 +41,22 @@
     transform: translateY(-30%);
     text-transform: uppercase;
   }
+  .btn {
+    font-size: 18px;
+    color: #fff;
+    padding: 12px 22px;
+    background: #5E3485;
+    border: 2px solid #fff;
+  }
+  .download-button{
+    height: 75px;
+    width: 220px;
+  }
+  @media(max-width: 600px) {
+    .carousel-caption {
+      display: none;
+    }
+  }
   </style>
 </head>
 
@@ -60,7 +75,7 @@
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">Updates</a></li>
           <li><a href="#">Future</a></li>
-          <li><a href="#">Download</a></li>
+          <li><a type="button" class="btn btn-default" href="https://itunes.apple.com/us/app/alien-escape-puzzle-strategy/id1268172911?mt=8">Download</a></li>
       </ul>
     </div>
   </div>
@@ -80,7 +95,7 @@
         <div class="carousel-caption">
           <h1>Defeat the Aliens</h1>
           <br>
-          <button type="button" class="btn btn-default">Download</button>
+          <a type="button" href="https://itunes.apple.com/us/app/alien-escape-puzzle-strategy/id1268172911?mt=8"><img class="download-button" src="img/download.png"></a>
         </div>
       </div>
       <!-- End Active -->
