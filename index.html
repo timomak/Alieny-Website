@@ -66,16 +66,22 @@
       margin: 4% auto;
     }
 
+    #link-text {
+      font-size: 2em;
+    }
+
     footer {
       width: 100%;
       background-color: #5E4485;
-      padding: 5%;
+      padding: 0.5%;
       color: #fff;
     }
 
     #icon {
       max-width: 200px;
       margin: 1% auto;
+      /* top: 50%; */
+      transform: translateY(50%);
     }
 
     .fa {
@@ -115,6 +121,7 @@
       }
       #icon {
         max-width: 150px;
+        transform: translateY(0%);
       }
     }
 
@@ -124,6 +131,7 @@
       }
       #icon {
         max-width: 100px;
+        transform: translateY(0%);
       }
       h1 {
         font-size: 1.7em;
@@ -156,6 +164,11 @@
 <body>
   <!-- Start to slider -->
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-caption">
+      <h1>Defeat the Aliens</h1>
+      <br>
+      <a type="button" href="https://itunes.apple.com/us/app/alien-escape-puzzle-strategy/id1268172911?mt=8"><img class="download-button" src="img/download.png"></a>
+    </div>
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
@@ -165,11 +178,6 @@
       <!-- Start Active -->
       <div class="item active">
         <img src="img/image.jpg">
-        <div class="carousel-caption">
-          <h1>Defeat the Aliens</h1>
-          <br>
-          <a type="button" href="https://itunes.apple.com/us/app/alien-escape-puzzle-strategy/id1268172911?mt=8"><img class="download-button" src="img/download.png"></a>
-        </div>
       </div>
       <!-- End Active -->
       <div class="item">
@@ -195,7 +203,7 @@
   <!-- Foldable Section -->
   <div class="container">
     <div class="row">
-      <h4><a href="#hidden" data-toggle="collapse">What is Alieny?</a></h4>
+      <h4 id="link-text"><a href="#hidden" data-toggle="collapse">What is Alieny?</a></h4>
       <div id="hidden" class="collapse">
         <h1>A game</h1>
       </div>
